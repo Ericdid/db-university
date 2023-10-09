@@ -21,3 +21,7 @@ SELECT \* FROM `courses` WHERE period = "I semestre" && year = "1";
 
 SELECT \* FROM `exams`
 WHERE hour > "14:00:00" && date = "2020-06-20";
+
+## 6. Selezionare tutti i corsi di laurea magistrale (38)
+
+SELECT \* FROM `degrees` WHERE level = "magistrale";
