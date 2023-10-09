@@ -14,3 +14,5 @@ SELECT TIMESTAMPDIFF (YEAR,`date_of_birth`, CURRENT_TIMESTAMP) AS `età`
 FROM `students`;
 
 ## 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
+
+SELECT \* FROM `courses` WHERE period = "I semestre" && year = "1";
