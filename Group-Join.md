@@ -18,6 +18,10 @@ GROUP BY `exam_id`;
 
 ## 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 
+SELECT COUNT(\*) AS `corsi_di_laurea`, `department_id` AS `dipartimento`
+FROM `degrees`
+GROUP BY `dipartimento`;
+
 ## 1. Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
 
 ## 2. Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento diNeuroscienze
