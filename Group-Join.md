@@ -24,6 +24,12 @@ GROUP BY `dipartimento`;
 
 ## 1. Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
 
+SELECT `students`.`name`, `students`.`surname`,`students`.`date_of_birth`,`students`.`fiscal_code`,`students`.`enrolment_date`
+FROM `students`
+JOIN `degrees`
+ON `students`.degree_id = `degrees`.id
+WHERE `degrees`.name = "corso di laurea in economia";
+
 ## 2. Selezionare tutti i Corsi di Laurea Magistrale del Dipartimento diNeuroscienze
 
 ## 3. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
